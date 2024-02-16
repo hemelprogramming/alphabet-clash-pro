@@ -70,26 +70,29 @@
           </div>
         </div>
         <div class="text-white flex justify-between w-2/3">
+          <!-- displye life -->
           <button class="btn bg-[#894189] border-none rounded-full text-white">
             Life
             <img src="images/Group 23.svg" alt="">
-            <span>1</span>
+            <span id="current-life">5</span>
           </button>
+          <!-- displye score -->
           <button class="btn bg-[#360490] border-none rounded-full text-white ">
             Score
             <img class="text-2xl" src="images/monetization_on.svg" alt="">
-            <span>1</span>
+            <span id="current-score">0</span>
           </button>
         </div>
       </div>
     </section>
-    <section class=" hidden score flex flex-col justify-center items-center min-h-screen">
+    <section id="score-show" class=" hidden score flex flex-col justify-center items-center min-h-screen">
       <div class="text-white text-center space-y-3 bg-[#ffffff33] p-4 rounded-lg">
+        <h2 class="text-4xl">Game over !</h2>
         <h1 class="text-8xl ">
           <span class="font-extrabold">Score :</span>
-          <span>14</span>
+          <span id="final-score">0</span>
         </h1>
-        <button class="btn text-black text-lg">Play agin</button>
+        <button onclick="play()" class="btn text-black text-lg">Play agin</button>
         <p>Practice will make you Pro</p>
       </div>
     </section>
